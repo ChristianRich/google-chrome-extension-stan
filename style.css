@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format("woff2"); }
+body {
+  background-color: #1e1e1e; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga'; }
+
+.infoWindow {
+  position: fixed;
+  width: 200px;
+  min-height: 80px;
+  max-height: 600px;
+  top: 58px;
+  left: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Gotham A','Gotham B', Arial, Helvetica,sans-serif;
+  font-weight: 300;
+  z-index: 9999;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 17px;
+  box-shadow: 1px 1px 8px #000; }
+  .infoWindow .strong {
+    font-weight: 700; }
+  .infoWindow .contents {
+    padding: 10px;
+    margin-top: 30px; }
+    .infoWindow .contents h1 {
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: 700; }
+    .infoWindow .contents .meta p {
+      margin: 0; }
+  .infoWindow .loading {
+    display: block;
+    position: absolute;
+    padding: 10px; }
+  .infoWindow .close {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #06f;
+    border-radius: 50%; }
+    .infoWindow .close i {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      font-size: 12px;
+      color: #fff; }
+  .infoWindow .imdb img {
+    vertical-align: baseline; }
+  .infoWindow .imdb span {
+    font-size: 15px;
+    vertical-align: 5px;
+    margin-left: 6px; }
+  .infoWindow:before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    margin-top: -15px;
+    left: -30px;
+    border: solid 15px transparent;
+    border-right-color: #fff;
+    z-index: 1; }
+
+.hidden {
+  display: none; }
+
+@media screen and (min-width: 1024px) {
+  .infoWindow {
+    top: 85px;
+    left: 20px; } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+.spin {
+  box-sizing: border-box;
+  animation: spin 0.85s linear 300;
+  transform: translateZ(0px); }
+
+/*# sourceMappingURL=style.css.map */
